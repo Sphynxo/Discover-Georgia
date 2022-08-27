@@ -1,0 +1,1055 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: FiraGO;
+    src: url(../Fonts/FiraGO-Regular.otf);
+}
+
+@font-face {
+    font-family: Light;
+    src: url(../Fonts/FiraGO-UltraLight.otf);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: #351361;
+    font-family: FiraGO;
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    padding-left: 100px;
+    background-color: #351361;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.16);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+h1{
+    height: 40px;
+    width: 40px;
+    background-image: url(../IMG/DG2\ logo.png);
+    background-size: 100%;
+    font-size: 16px;
+    text-indent: -99999px;
+}
+
+h1:hover{
+    background-size: 100%;
+    background-image: url(../IMG/DG2\ logo\ hover.png);
+}
+
+h1 a{
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+nav ul{
+    width: 600px;
+    margin: 0 auto;
+    position: static;
+}
+
+header li p{
+    color: #F7FF00;
+    font-size: 16px;
+    padding: 16px;
+    position: relative;
+}
+
+header li p:hover{
+    color: #87D19D;
+    cursor: pointer;
+}
+
+header li p::before{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #87D19D;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 1s;
+}
+
+header li p:hover:before{
+    width: 100%;
+}
+
+.start{
+    width: 120px;
+    height: 40px;
+    margin-right: 100px;
+}
+
+.disc{
+    border: 1px solid #F7FF00;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+}
+
+.disc p{
+    color: #F7FF00;
+    font-size: 16px;
+}
+
+.disc:hover{
+    background-color: #87D19D;
+    border: 0px;
+}
+
+.disc:hover p{
+    color: #351361;
+}
+
+.home, map{
+    position: relative;
+    height: 582px;
+    margin-left: 100px;
+}
+
+.dg2{
+    width: 30%;
+    height: 92px;
+    background-image: url(../IMG/DG2.png);
+    background-size: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+
+.arrow{
+    width: 30%;
+    height: 36px;
+    background-image: url(../IMG/arrow-long-right.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 16px;
+}
+
+.dgtext{
+    margin-top: 16px;
+}
+
+.dgtext p{
+    font-family: FiraGo;
+    font-size: 24px;
+    color: #F7FF00;
+}
+
+.character{
+    width: 624px;
+    height: 608px;
+    background-image: url(../img/Character.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.services{
+    width: 30%;
+}
+
+.accomodation, .transportation, .camping, .events, .hiking, .extreme{
+    width: 73%;
+    height: 84px;
+    position: relative;
+}
+
+.transportation{
+    width: 70%;
+}
+
+.camping{
+    width: 70%;
+}
+
+.events{
+    width: 27%;
+}
+
+.hiking{
+    width: 30%;
+}
+
+.extreme{
+    width: 30%;
+}
+
+.descr, .descrmarj{
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.descrmarj{
+    right: 0;
+}
+
+.descr p, .descrmarj p{
+    font-size: 14px;
+    padding: 8px 12px;
+    background-color: #F7FF00;
+    border-radius: 4px;
+}
+
+.events .descrmarj p{
+    width: 232px;
+}
+
+.hiking .descrmarj p{
+    width: 320px;
+}
+
+.extreme .descrmarj p{
+    width: 312px;
+}
+
+.saxeli, .saxelimarj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.saxelimarj{
+    right: 0;
+}
+
+.name p{
+    margin-left: 24px;
+    color: #87D19D;
+}
+
+.namemarj p{
+    margin-right: 24px;
+    color: #87D19D;
+}
+
+.accomodation:hover .name p, .transportation:hover .name p, .camping:hover .name p, .events:hover .namemarj p, .hiking:hover .namemarj p, .extreme:hover .namemarj p{
+    color: #F7FF00;
+}
+
+.accomodation:hover .descr, .transportation:hover .descr, .camping:hover .descr, .events:hover .descrmarj, .hiking:hover .descrmarj, .extreme:hover .descrmarj{
+    display: block;
+}
+
+.call{
+    width: 30%;
+}
+
+.cta{
+    margin-top: 40px;
+    border: 1px solid #F7FF00;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+}
+
+.cta p{
+    color: #F7FF00;
+    font-size: 16px;
+}
+
+.cta:hover{
+    background-color: #87D19D;
+    border: 0px;
+}
+
+.cta:hover p{
+    color: #351361;
+}
+
+.scroll{
+    width: 184px;
+    height: 64px;
+    background-image: url(../IMG/Scroll\ down.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 40px;
+    left: 40%;
+}
+
+.scroll:hover{
+    width: 184px;
+    height: 64px;
+    background-size: 100%;
+    background-image: url(..//IMG/Scroll\ down\ hover.png);
+}
+
+.choose{
+    margin-top: 136px;
+    color: #F7FF00;
+    font-size: 40px;
+    text-align: center;
+}
+
+.georgia{
+    height: 464px;
+    width: 912px;
+    position: relative;
+    margin: 60px auto;
+}
+
+.kakheti, .abkhazia, .adjara, .guria, .samegrelo, .imereti, .racha, .javakh, .shida, .kvemo, .mtianeti, .tbilisi{
+    width: 230px;
+    height: 278px;
+    background-image: url(../IMG/kakheti.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+.kakheti:hover{
+    background-image: url(../IMG/kakheti2.png);
+}
+
+.abkhazia{
+    width: 292px;
+    height: 214px;
+    background-image: url(../IMG/abkhazia.png);
+    left: 20px;
+    top: 0;
+}
+
+.abkhazia:hover{
+    background-image: url(../img/abkhazia2.png);
+}
+
+.mtianeti{
+    width: 152px;
+    height: 192px;
+    background-image: url(../IMG/mtianeti.png);
+    right: 188px;
+    top: 156px;
+}
+
+.mtianeti:hover{
+    background-image: url(../img/mtianeti2.png);
+}
+
+.kvemo{
+    width: 226px;
+    height: 130px;
+    background-image: url(../IMG/kvemokartli.png);
+    right: 184px;
+    top: 308px;
+}
+
+.kvemo:hover{
+    background-image: url(../IMG/kvemokartli2.png);
+}
+
+.shida{
+    width: 160px;
+    height: 172px;
+    background-image: url(../IMG/shida.png);
+    right: 282px;
+    top: 173px;
+}
+
+.shida:hover{
+    background-image: url(../IMG/shida2.png);
+}
+
+.javakh{
+    width: 202px;
+    height: 150px;
+    background-image: url(../IMG/javakh.png);
+    right: 368px;
+    top: 296px;
+}
+
+.javakh:hover{
+    background-image: url(../IMG/javakh2.png);
+}
+
+.imereti{
+    width: 190px;
+    height: 132px;
+    background-image: url(../IMG/imereti.png);
+    right: 412px;
+    top: 190px;
+    z-index: +1;
+}
+
+.imereti:hover{
+    background-image: url(../IMG/imereti2.png);
+}
+
+.racha{
+    width: 202px;
+    height: 116px;
+    background-image: url(../IMG/racha.png);
+    right: 378px;
+    top: 112px;
+}
+
+.racha:hover{
+    background-image: url(../img/racha2.png);
+}
+
+.samegrelo{
+    width: 220px;
+    height: 212px;
+    background-image: url(../IMG/samegrelo.png);
+    right: 464px;
+    top: 60px;
+}
+
+.samegrelo:hover{
+    background-image: url(../IMG/samegrelo2.png);
+}
+
+.guria{
+    width: 122px;
+    height: 72px;
+    background-image: url(../IMG/guria.png);
+    right: 540px;
+    top: 254px;
+}
+
+.guria:hover{
+    background-image: url(../IMG/guria2.png);
+}
+
+.adjara{
+    width: 144px;
+    height: 92px;
+    background-image: url(../IMG/adjara.png);
+    right: 540px;
+    top: 296px;
+}
+
+.adjara:hover{
+    background-image: url(../IMG/adjara2.png);
+}
+
+.tbilisi{
+    width: 44px;
+    height: 44px;
+    background-image: url(../IMG/tbilisi.png);
+    right: 230px;
+    top: 316px;
+}
+
+.tbilisi:hover{
+    background-image: url(../IMG/tbilisi2.png);
+}
+
+.hike1{
+    width: 176px;
+    height: 272px;
+    background-image: url(../img/hike1.png);
+    position: absolute;
+    left: 100px;
+    top: 1108px;
+}
+
+.hike2{
+    width: 120px;
+    height: 272px;
+    background-image: url(../IMG/hike2.png);
+    position: absolute;
+    left: 370px;
+    top: 920px;
+    z-index: -1;
+}
+
+.tea{
+    width: 120px;
+    height: 176px;
+    background-image: url(../IMG/tea.png);
+    position: absolute;
+    left: 930px;
+    top: 920px;
+}
+
+.hike3{
+    width: 192px;
+    height: 288px;
+    background-image: url(../IMG/hike3.png);
+    position: absolute;
+    right: 100px;
+    top: 1108px;
+}
+
+.contact{
+    position: relative;
+}
+
+.fields{
+    width: 448px;
+    height: 416px;
+    background-color: #9999992d;
+    border-radius: 20px;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-bottom: 108px;
+    padding-top: 20px;
+}
+
+.cont{
+    font-size: 40px;
+    color: #F7FF00;
+    text-align: center;
+    margin-top: 196px;
+}
+
+.travel1{
+    width: 220px;
+    height: 416px;
+    background-image: url(../IMG/travel1.png);
+    position: absolute;
+    right: 500px;
+    bottom: 0;
+}
+
+.travel2{
+    width: 248px;
+    height: 416px;
+    background-image: url(../IMG/travel2.png);
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+form{
+    width: 416px;
+}
+
+form input{
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    border: 1px solid #F7FF00;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 16px;
+    font-size: 14px;
+    color: #F7FF00;
+}
+
+input:focus, textarea:focus{
+    color: #F7FF00;
+    background-color: #f6ff001e;
+}
+
+label{
+    color: #F7FF00;
+    font-size: 16px;
+    margin-left: 16px;
+}
+
+textarea{
+    width: 100%;
+    height: 128px;
+    margin-left: 16px;
+    margin-top: 8px;
+    resize: none;
+    border-radius: 4px;
+    border: 1px solid #F7FF00;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    padding: 16px;
+    font-size: 14px;
+}
+
+.send{
+    color: #F7FF00;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.send:hover{
+    background-color: #87D19D;
+    border: 0px;
+    color: #351361;
+    cursor: pointer;
+}
+
+.about{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.aboutus{
+    color: #F7FF00;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 196px;
+}
+
+.lorem{
+    width: 504px;
+    height: 464px;
+    margin-top: 60px;
+    margin-left: 100px;
+    background-color: #9999992d;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.lorem p{
+    color: #F7FF00;
+    font-size: 14px;
+    text-indent: 24px;
+}
+
+.lorem h3{
+    color: #F7FF00;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.par2, .par3{
+    margin-top:  4px;
+    text-indent: 24px;
+}
+
+.campingphoto{
+    width: 688px;
+    height: 464px;
+    background-image: url(../IMG/Campingphoto.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+}
+
+.backtop{
+    display: none;
+    width: 48px;
+    height: 48px;
+    background-image: url(../IMG/BackToTop.svg);
+    position: fixed;
+    top: 598px;
+    right: 100px;
+}
+
+.backtop:hover{
+    background-image: url(../IMG/BackToTopHover.svg);
+    cursor: pointer;
+}
+.open-button {
+    width: 48px;
+    height: 48px;
+    background-image: url(../IMG/chatbubble-ellipses.svg);
+    cursor: pointer;
+    position: fixed;
+    top: 598px;
+    right: 174px;
+  }
+
+  .open-button:hover{
+    background-image: url(../IMG/chatbubble-ellipses\ hover.svg);
+  }
+
+  .satauri{
+    font-size: 16px;
+    color: #87D19D;
+  }
+
+  .msg{
+    font-size: 14px;
+    color: #87D19D;
+}
+  
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 120px;
+    right: 174px;
+    border: 3px solid #F7FF00;
+    border-radius: 8px;
+    z-index: 9;
+  }
+
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #351361;
+    border-radius: 8px;
+  }
+
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f6ff002a;
+    resize: none;
+    min-height: 200px;
+    color: #F7FF00;
+  }
+
+  .form-container textarea:focus {
+    background-color: #f6ff002a;
+    outline: none;
+  }
+
+  .form-container .btn {
+    background-color: #F7FF00;
+    color: #351361;
+    padding: 16px 20px;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+  .form-container .btn:hover{
+    background-color: #f6ff00c3;
+  }
+
+  .form-container .cancel {
+    width: 24px;
+    height: 24px;
+    background-image: url(../IMG/Close.svg);
+  }
+
+  .form-container .cancel:hover{
+    cursor: pointer;
+    background-image: url(../IMG/Closehover.svg);
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ----------   LOGIN   ------------------------------- */
+
+.login header{
+    display: none;
+}
+
+.login main{
+    display: flex;
+}
+
+.login .container{
+    width: 500px;
+    height: 600px;
+    margin: 56px auto;
+    background-color: #9999992d;
+    border-radius: 20px;
+    margin-right: 100px;
+}
+
+.login .geo{
+    width: 800px;
+    height: 400px;
+    background-image: url(../IMG/Geo.png);
+    background-size: 100%;
+    margin-top: 150px;
+    margin-left: 100px;
+    background-repeat: no-repeat;
+}
+
+.login footer{
+    display: none;
+}
+
+.login h2{
+    color: #87D19D;
+    font-size: 40px;
+    margin-top: 104px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.login input{
+    height: 48px;
+    border: 1px solid #87D19D;
+    width: 468px;
+    margin-top: 8px;
+    color: #87D19D;
+    font-size: 16px;
+}
+
+.login input:focus{
+    color: #87D19D;
+    background-color: #87d19d3b;
+}
+
+.login .enter{
+    background-color: #87D19D;
+    color: #351361;
+    font-size: 16px;
+    margin-top: 48px;
+}
+
+.login .enter:hover{
+    background-color: #6abb82;
+    color: #351361;
+    border: 0px;
+    cursor: pointer;
+}
+
+.login .container p{
+    font-size: 14px;
+    color: #87D19D;
+    text-align: center;
+    margin-top: 112px;
+}
+
+.login .container p a{
+    color: #F7FF00;
+}
+
+/* -------------REGISTRATION-------------------------- */
+
+.registration header{
+    display: none;
+}
+
+.registration main{
+    display: flex;
+    margin-top: 64px;
+}
+
+.registration .reg{
+    width: 800px;
+    height: 600px;
+    background-color: #9999992d;
+    margin: 24px auto;
+    border-radius: 20px;
+}
+
+.registration .reg h2{
+    color: #87D19D;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.registration footer{
+    display: none;
+}
+
+.registration form{
+    margin-top: 80px;
+}
+
+.registration input{
+    margin: 0;
+    width: 364px;
+    height: 48px;
+    font-size: 16px;
+    border-color: #87D19D;
+    color: #87D19D;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.registration .line{
+    width: 752px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-left: 24px;
+}
+
+.registration input:focus{
+    color: #87D19D;
+    background-color: #87d19d3b;
+}
+
+.registration .signup{
+    background-color: #87D19D;
+    color: #351361;
+    margin-left: 24px;
+    width: 752px;
+    height: 48px;
+    margin-top: 60px;
+}
+
+.registration .signup:hover{
+    background-color: #6abb82;
+    color: #351361;
+    cursor: pointer;
+}
+
+.registration p{
+    color: #87D19D;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 92px;
+}
+
+.registration p a{
+    color: #F7FF00;
+}
+
+.registration main{
+    background-image: url(../IMG/244\ [Converted].png);
+    background-position-x: -80px;
+}
+
+/* ------------KAKHETI----------------------------------*/
+
+.regioni header{
+    padding-left: 100px;
+    padding-top: 16px;
+    display: flex;
+}
+
+.regioni .regions{
+    width: 100%;
+    height: 100%;
+}
+
+.regioni nav{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 16px 8px 16px 8px;
+}
+
+.regioni h2{
+    font-size: 40px;
+    color: #F7FF00;
+    text-align: center;
+    margin: 32px;
+}
+
+.regioni ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.regioni ul a{
+    font-size: 14px;
+    color: #F7FF00;
+    font-family: Light;
+    padding: 16px 8px 16px 8px;
+}
+
+.regioni ul a:hover{
+    background-color: #F7FF00;
+    border-radius: 4px;
+    color: #351361;
+}
+
+.regioni footer{
+    display: none;
+}
+
+.item{
+    height: 500px;
+    width: 1000px;
+    margin: 24px auto
+} 
+
+.long{
+    margin-top: -100px;
+}
+
+.owl-theme .owl-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 262px;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background: 0 0;
+    color: #F7FF00;
+    border: none;
+    padding: 0!important;
+    font-size: 72px;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    margin-right: 100px;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    margin-left: 100px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #6abb82;
+    text-decoration: none;
+}
+
+.owl-dots{
+    display: none;
+}
+
+.regioni .agwera{
+    font-size: 14px;
+    font-family: light;
+    color: #F7FF00;
+    width: 1000px;
+    margin: 32px auto;
+    line-height: 2;
+}
+
+.regioni .discregion{
+    width: 1000px;
+    height: 48px;
+    margin: 24px auto;
+    border: 1px solid #F7FF00;
+    border-radius: 4px;
+
+}
+
+.regioni .discregion p{
+    color: #F7FF00;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.regioni .discregion:hover{
+    background-color: #87D19D;
+    border-color: #87D19D;
+}
+
+.regioni .discregion:hover p{
+    color: #351361;
+}
+
+.regioni .occ{
+    font-size: 40px;
+    color: #ff0000;
+    margin: 24px auto;
+}
